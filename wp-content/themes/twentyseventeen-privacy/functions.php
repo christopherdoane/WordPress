@@ -1,11 +1,11 @@
 <?php
 /* Kudos goes to joseph-dickson.com */
 
-remove_action( 'remove_fonts_calls', 'wp_enqueue_scripts', 1 )
-add_action( 'wp_enqueue_scripts_new', 'twentyseventeen_child_enqueue_styles' );
-function twentyseventeen_child_enqueue_styles() {
+remove_action( 'remove_fonts_calls', 'wp_enqueue_scripts', 1 );
+add_action( 'wp_enqueue_scripts_new', 'twentyseventeen_privacy_enqueue_styles' );
+function twentyseventeen_privacy_enqueue_styles() {
         wp_enqueue_style( 'twentyseventeen-style', get_template_directory_uri() . '/style.css' );
-        wp_enqueue_style( 'twentyseventeen-child-style', get_stylesheet_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'twentyseventeen-privacy-style', get_stylesheet_directory_uri() . '/style.css' );
 }
 /* 
  * Remove Google Fonts from being imported from Google:
